@@ -17,54 +17,25 @@ function MatchTable(props) {
         "KKR":"Kolkata",
         "RCB":"Bengaluru",
         "MI":"Mumbai",
-        "CSK":"Chennai"
+        "CSK":"Chennai",
+        "gt":"Ahmedabad",
+        "pk":"Mohali",
+        "lsg":"Lucknow",
+        "srh":"Hyderabad",
+        "dc":"Delhi",
+        "rr":"Guwahati",
+        "kkr":"Kolkata",
+        "rcb":"Bengaluru",
+        "mi":"Mumbai",
+        "csk":"Chennai"
     }
-    // const getTime = (dateStr) => {
-    //     let date = new Date(dateStr);
-    //     let dayOfWeek = date.getUTCDay();
-    //     if (dayOfWeek >= 0 && dayOfWeek < 5) {
-    //       // Monday to Friday
-    //       return "7:30 PM";
-    //     } else {
-    //       // Saturday and Sunday
-    //       if (dayOfWeek===5 ) {
-    //         // 3:30 PM
-    //         return "3:30 PM";
-    //       } else {
-    //         // 7:30 PM
-    //         return "7:30 PM";
-    //       }
-    //     }
-    //   };
-
-    // const getTime = (dateStr) => {
-    //     let date = new Date(dateStr);
-    //     let dayOfWeek = date.getUTCDay();
-    //     let flag=1;
-    //     if (dayOfWeek >= 0 && dayOfWeek < 5) {
-    //       // Monday to Friday
-    //       return "7:30 PM";
-    //     } else {
-    //       // Saturday and Sunday
-    //       if (dayOfWeek === 5 && flag===1) {
-    //         // 3:30 PM
-    //         flag=0;
-    //         return "3:30 PM";
-    //       } else {
-    //         // 7:30 PM
-    //         return "7:30 PM";
-    //       }
-    //     }
-    //   };
 
     const getTime = (dateStr, index) => {
         const date = new Date(dateStr);
         const dayOfWeek = date.getUTCDay();
         if (dayOfWeek >= 0 && dayOfWeek < 5) {
-          // Monday to Friday
           return "7:30 PM";
         } else if (dayOfWeek === 5 || dayOfWeek === 6) {
-          // Saturday and Sunday
           if (index % 2 === 0) {
             return "3:30 PM";
           } else {
@@ -113,7 +84,6 @@ function MatchTable(props) {
                     ))}
                 </tbody>
             </Table>
-            {/* <button onClick={handleDownload} className='btn'>Download</button> */}
             <Button variant="primary" onClick={handleDownload} className='btn'>Download</Button>
         </>
     );

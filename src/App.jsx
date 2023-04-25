@@ -28,8 +28,11 @@ function App() {
   }
 
   const prepareSchedule=()=>{
-    if (teams.some(team => !team.match(/^(SRH|RCB|DC|RR|PK|LSG|GT|MI|KKR|CSK)$/))) {
+    if (teams.some(team => !team.match(/^(SRH|RCB|DC|RR|PK|LSG|GT|MI|KKR|CSK)$/i))) {
       setErrorMsg("Invalid team code entered. Please enter a valid team code.")
+    }
+    else if (new Set(teams).size !== teams.length) {
+      setErrorMsg("A team name was entered again. Please remove the duplicate.")
     }
     else if(teams.length<4){
       setErrorMsg("Minimum 4 teams")
@@ -84,7 +87,7 @@ function App() {
         </thead>
         <tbody>
           <tr>
-            <td>Sunrisers</td>
+            <td>Sunrisers Hyderabad</td>
             <td>SRH</td>
           </tr>
           <tr>

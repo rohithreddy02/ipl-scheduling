@@ -84,8 +84,9 @@ thead th {
   width: 200px;
   height: 200px;
   align-items: center;
-  margin-left: 570px;
+  /* margin-left: 570px; */
   margin-top: 20px;
+  margin-left: 42%;
 }
 
 .h1{
