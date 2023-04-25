@@ -1,0 +1,93 @@
+*{
+  font-family: sans-serif;
+  background-color: rgb(15, 15, 105);
+}
+.card {
+  padding: 2em;
+  
+}
+
+.searchBar{
+  width: 60%;
+  margin: 1% 50% 0 20%;
+}
+
+.capsule{
+  margin-right: 10px;
+  background-color: #14b7f5;
+  font-size: 25px;
+  border-radius: 10px;
+  color: black;
+  background-image: none;
+  background-color: white;
+}
+
+.remove{
+  font-size: 15px;
+  background-image: none;
+  background-color: white;
+}
+
+.error{
+  color: red;
+  text-align: center;
+  background-image: none;
+  background-color: white;
+  border-radius: 5px;
+}
+
+
+.title {
+  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  color: white;
+  font-size: 800px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+}
+
+ tr {
+  text-align: center;
+  background-image: none;
+  font-size: 1rem;
+  background-color: white;
+}
+thead th {
+  text-align: center;
+  font-size: 1rem;
+  background-color: rgb(250, 93, 2);
+  color: black;
+}
+
+.img {
+  display: flex;
+  float: left;
+  width: 10%;
+  height: 10%;
+  margin-left: 5px;
+}
+
+.btn {
+  text-align: center;
+  align-items: center;
+  border: 1px;
+  border-radius: 1px;
+  margin-left: 360px;
+  font-size: large;
+  margin-bottom: 25px;
+  margin-top: 10px;
+}
+
+.ipl {
+  width: 200px;
+  height: 200px;
+  align-items: center;
+  margin-left: 570px;
+  margin-top: 20px;
+}
+
+.h1{
+  text-align: center;
+}
